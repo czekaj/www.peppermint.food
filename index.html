@@ -17,8 +17,10 @@
     </script>
 
     <script>
-        // Immediate redirect
-        window.location.href = "https://www.peppermint.engineering";
+        // Delayed redirect to allow tracking scripts to execute
+        setTimeout(function () {
+            window.location.href = "https://www.peppermint.engineering";
+        }, 1000); // 1 second delay
     </script>
 </head>
 
